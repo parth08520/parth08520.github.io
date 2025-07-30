@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Mistry - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for the Inter font and basic body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 font-sans text-gray-800">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">PARTH MISTRY</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">About</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Skills</a></li>
+                <li><a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Experience</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Projects</a></li>
+                <li><a href="#education" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Education</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300">Contact</a></li>
+            </ul>
+            <!-- Mobile menu button - for future JavaScript implementation if needed -->
+            <div class="md:hidden">
+                <button class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="container mx-auto px-6 md:px-10 py-16 text-center">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-3xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-indigo-700 mb-4">Hi, I'm PARTH MISTRY!</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">Solutions-oriented software developer with 2+ years of experience in PHP (Laravel, Symfony) and enterprise web systems. Delivered 5+ full-stack projects across SaaS, retail, and education sectors. Skilled in frontend development (ReactJS, HTML, CSS, JavaScript, jQuery) and backend database management (MySQL, MariaDB). Certified in project management and cloud operations, with working knowledge of AWS, Azure, Docker, CI/CD, and Agile/Scrum practices.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">Get in Touch</a>
+                <!-- You can add a link to download resume here -->
+                <!-- <a href="/path/to/your/resume.pdf" download class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-300 transition duration-300 shadow-md">Download Resume</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-6 md:px-10 py-16">
+        <h2 class="text-3xl font-bold text-center text-indigo-700 mb-10">My Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">Languages & Scripting</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Python</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">Frontend</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>ReactJS</li>
+                    <li>Vue.js</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">Frameworks</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Laravel</li>
+                    <li>Symfony</li>
+                    <li>Flask</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">Databases</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>MySQL</li>
+                    <li>MariaDB</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">Cloud Platforms</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>AWS (EC2, S3, IAM, RDS, CloudWatch)</li>
+                    <li>Azure (Virtual Machines, Azure Active Directory, Resource Groups, Azure Monitor)</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">DevOps & Tools</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Git</li>
+                    <li>CI/CD</li>
+                    <li>Docker</li>
+                    <li>Jenkins</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-4">Other Tools</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Microsoft 365</li>
+                    <li>VS Code</li>
+                    <li>PyCharm</li>
+                    <li>JetBrains</li>
+                    <li>JIRA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="container mx-auto px-6 md:px-10 py-16 bg-indigo-50 rounded-xl shadow-inner">
+        <h2 class="text-3xl font-bold text-center text-indigo-700 mb-10">Work Experience</h2>
+        <div class="space-y-12">
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:translate-y-1 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900">Software Engineer</h3>
+                <p class="text-indigo-600 text-lg mb-2">Sparsh Technologies, Ahmedabad, INDIA.</p>
+                <p class="text-gray-500 text-md mb-4">July 2022 - July 2023</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed and maintained 5+ web applications using PHP (Laravel, Symfony), ReactJS, and MySQL/MariaDB.</li>
+                    <li>Built reusable UI components with HTML, CSS, JavaScript, and jQuery, reducing frontend development time.</li>
+                    <li>Optimised SQL queries and schema design, improving data retrieval and reducing load times by up to 20%.</li>
+                    <li>Integrated RESTful APIs and third-party services (CRMs, payment gateways) to enhance system functionality.</li>
+                    <li>Wrote Bash scripts for automating log cleanup and environment setup on Linux servers.</li>
+                    <li>Supported Docker-based deployments and assisted in resolving post-deployment issues.</li>
+                    <li>Participated in Agile sprints and collaborated with cross-functional teams to meet sprint goals.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:translate-y-1 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900">Junior Software Engineer</h3>
+                <p class="text-indigo-600 text-lg mb-2">Sparsh Technologies, Ahmedabad, INDIA.</p>
+                <p class="text-gray-500 text-md mb-4">July 2021 - July 2022</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Assisted in the development of client-facing SaaS platforms using Laravel, Vue.js, and jQuery.</li>
+                    <li>Contributed to the creation of dynamic UI components and implemented responsive layouts.</li>
+                    <li>Built and maintained REST APIs to support mobile apps and backend integrations.</li>
+                    <li>Refactored frontend codebases, reducing UI-related bugs and improving page load performance.</li>
+                    <li>Supported database operations with MySQL and MariaDB, including data migrations and simple query tuning.</li>
+                    <li>Helped integrate payment systems (e.g., Xero), enabling secure and automated transactions.</li>
+                    <li>Participated in Agile ceremonies, including daily standups, sprint planning, and retrospectives.</li>
+                    <li>Handled issue tracking and resolved 30+ user-reported bugs across various modules.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:translate-y-1 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900">Trainee</h3>
+                <p class="text-indigo-600 text-lg mb-2">Sparsh Technologies, Ahmedabad, INDIA.</p>
+                <p class="text-gray-500 text-md mb-4">January 2021 - June 2021</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Worked under senior mentorship to build backend modules using PHP and Laravel.</li>
+                    <li>Contributed to internal admin tools by updating layouts using HTML, CSS, and basic JavaScript.</li>
+                    <li>Created small utility scripts for backend validation and field handling.</li>
+                    <li>Learned and applied Git for version control and gained practical exposure to MVC architecture.</li>
+                    <li>Participated in peer testing and bug verification for minor releases.</li>
+                    <li>Shadowed the DevOps team during server setup and Bash automation tasks.</li>
+                    <li>Prepared documentation for onboarding guides and common error resolution.</li>
+                    <li>Completed structured training on project workflows and internal coding standards.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-6 md:px-10 py-16">
+        <h2 class="text-3xl font-bold text-center text-indigo-700 mb-10">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">AI/ML Business Intelligence Platform - Wouessi (Industry-Sponsored Capstone)</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed frontend features using ReactJS for a real-time analytics dashboard aimed at helping SMEs make data-driven decisions.</li>
+                    <li>Collaborated with Wouessi's technical lead to align development with business requirements.</li>
+                    <li>Managed task tracking and documentation using ClickUp, Microsoft Project, Microsoft Teams, and Git.</li>
+                    <li>Delivered working prototype and sprint reviews as part of academic and client evaluation milestones.</li>
+                </ul>
+                <!-- Add links to project repos/demos if available -->
+                <!-- <div class="mt-4">
+                    <a href="#" class="text-indigo-600 hover:underline font-medium">View Project</a>
+                </div> -->
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">College Administration System Portal</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Built a web portal using Python (Flask) and MySQL to manage student, faculty, and administrative workflows.</li>
+                    <li>Designed user-role based modules (admin, student, faculty) and implemented full CRUD functionality.</li>
+                    <li>Automated attendance tracking and admission form processing, reducing manual workload.</li>
+                </ul>
+                <!-- Add links to project repos/demos if available -->
+                <!-- <div class="mt-4">
+                    <a href="#" class="text-indigo-600 hover:underline font-medium">View Project</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto px-6 md:px-10 py-16 bg-indigo-50 rounded-xl shadow-inner">
+        <h2 class="text-3xl font-bold text-center text-indigo-700 mb-10">Education</h2>
+        <div class="space-y-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:translate-y-1 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900">Post Graduate Certificate in Project Management</h3>
+                <p class="text-indigo-600 text-lg mb-2">Holland College, Charlottetown, PE.</p>
+                <p class="text-gray-500 text-md">September 2024 - April 2025</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:translate-y-1 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900">Post Graduate Certificate in Cloud Ops</h3>
+                <p class="text-indigo-600 text-lg mb-2">York University, Toronto, ON.</p>
+                <p class="text-gray-500 text-md">September 2023 - April 2024</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg transform hover:translate-y-1 transition duration-300">
+                <h3 class="text-2xl font-semibold text-gray-900">Bachelor of Engineering in Information Technology</h3>
+                <p class="text-indigo-600 text-lg mb-2">Gujarat Technological University, Ahmedabad, India.</p>
+                <p class="text-gray-500 text-md">August 2017 - August 2021</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-6 md:px-10 py-16 text-center">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="space-y-3 mb-6">
+                <p class="text-gray-700 text-lg">
+                    <span class="font-semibold">Phone:</span> +1 437-669-9975
+                </p>
+                <p class="text-gray-700 text-lg">
+                    <span class="font-semibold">Email:</span> <a href="mailto:parth08520@gmail.com" class="text-indigo-600 hover:underline">parth08520@gmail.com</a>
+                </p>
+                <p class="text-gray-700 text-lg">
+                    <span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">LinkedIn</a>
+                </p>
+                <p class="text-gray-700 text-lg">
+                    <span class="font-semibold">Location:</span> Charlottetown, PEI.
+                </p>
+            </div>
+            <!-- You could add a contact form here if desired -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> PARTH MISTRY. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with HTML, CSS (Tailwind CSS), and JavaScript</p>
+        </div>
+    </footer>
+
+</body>
+</html>
